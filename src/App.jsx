@@ -1,3 +1,8 @@
+const initialItems = [
+  { id: 1, description: "Passports", quantity: 2, packed: false },
+  { id: 2, description: "Socks", quantity: 12, packed: false },
+];
+
 function App() {
   return (
     <div className="app">
@@ -19,11 +24,11 @@ function Form() {
   );
 }
 function PackingList() {
-  return <div className="List">LIST</div>;
+  return <div className="list">LIST</div>;
 }
 function Stats() {
   return (
-    <footer>
+    <footer className="stats">
       <em> 💼 you have X times in your list , and you alreadt packed X (X%)</em>
     </footer>
   );
